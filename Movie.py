@@ -60,7 +60,7 @@ with tab1:
     st.image("1a.jpeg")
     st.image("1b.jpg")  
 # Movie Data Collection:
-    data=[[
+    data1=[[
          "https://m.media-amazon.com/images/M/MV5BNzc4ZWQ3NmYtODE0Ny00YTQ4LTlkZWItNTBkMGQ0MmUwMmJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "https://tse1.mm.bing.net/th/id/OIP.pVCzZi2NLIm1ICXs3ELdDQHaJ4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
     "https://assets.gadgets360cdn.com/pricee/assets/product/202206/Jawan-poster_1655912386.jpg",
@@ -134,6 +134,7 @@ with tab1:
     "https://th.bing.com/th/id/OIP.dxB1AvQgPlbgdUblXe3R2wHaKj?w=132&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
     "https://th.bing.com/th/id/OIP.5dCdOjU5wusg1c6nU3ViEAHaLH?w=204&h=306&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
     ]]
+    print(data1)
     data = {
     "Movie_Name": [
         "3 Idiots", "Dangal", "Jawan", "Pathaan",
