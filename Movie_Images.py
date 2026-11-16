@@ -1,10 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-data={
-    "Movie_Image": [(None)]
-}
-pd.set_option('display.max_colwidth', None)
 #Displaying multiple tabs on the same page
 tab1, tab2, tab3 = st.tabs(["Movie Images", "Movie Names", "Movie Ratings"])
 with tab1:
@@ -14,7 +10,6 @@ with tab2:
     st.header("Movie Names")
     st.write("This tab displays names of movies.")
     a=pd.read_csv("movies.csv")
-    
     
 with tab3:
     st.header("Movie Ratings")
@@ -27,11 +22,6 @@ with tab3:
         filtered_movies = a[(a['genres'] == genre)]
         st.write("Recommended Movies:")
         st.dataframe(filtered_movies)
-
-
-
-
-
 with tab2:
     st.header("Movie Names")
     st.write("This tab displays names of movies.")
